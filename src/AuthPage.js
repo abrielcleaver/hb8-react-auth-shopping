@@ -24,7 +24,7 @@ export default function AuthPage({
 
   return (
     <div className='auth'>
-      <h1><em>busybody</em></h1>
+      <h1><em>Welcome to busybody</em></h1>
       <h3><em>The shopping list app For a busy world</em></h3>
       <form onSubmit={handleSignIn}>
         <label>
