@@ -21,7 +21,7 @@ export default function App() {
       const data = getUser();
       setUser(data);
     }
-      
+
     fetch();
   }, []);
 
@@ -37,6 +37,10 @@ export default function App() {
       <div className='App'>
         <header>
           {/* if there's a user, render a logout button here */}
+          {
+            user &&
+            <button onClick={handleLogout}>logout</button>
+          }
         </header>
         <main>
           <Switch>
